@@ -12,7 +12,7 @@ node
 }
     stage ('Build'){
     sh "${mavenHome}/bin/mvn clean package"
-}   /*
+}   
     stage ('executeSonarqubeReport'){
     sh "${mavenHome}/bin/mvn sonar:sonar"
 }
