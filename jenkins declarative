@@ -5,7 +5,9 @@ agent any
 tools{
 maven "maven3.8.6"
 }
-
+triggers {
+  pollSCM('* * * * *')
+}
 stages{
     //get the code from GitHub
     stage('checkoutCode'){
